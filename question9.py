@@ -4,12 +4,12 @@ def has_pair_with_sum(nums, target):
     Returns True if two distinct numbers in the list add up to the target sum, otherwise False.
     Uses a set to store visited numbers and check if target - num exists in the set.
     """
-    seen = set()  # Initialize an empty set to store visited numbers
+    seen = set()
     for num in nums:
-        if target - num in seen:  # Check if the required number to reach the target exists in seen
-            return True  # Pair found that adds up to target
-        seen.add(num)  # Add the current number to seen for future checks
-    return False  # Return False if no pair adds up to the target
+        if target - num in seen:
+            return True
+        seen.add(num)
+    return False
 
 # Example usage:
 sample_list = [10, 15, 3, 7]

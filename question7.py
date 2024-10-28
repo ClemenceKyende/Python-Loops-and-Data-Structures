@@ -5,10 +5,10 @@ def remove_duplicates(lst):
     """
     result = []
     for item in lst:
-        if item not in result:  # Check if item is not already in result list
-            result.append(item)  # Add unique item to result list
+        if item not in result:
+            result.append(item)
     return result
 
 # Example usage:
 sample_list = [1, 2, 2, 3, 4, 4, 5]
-print(remove_duplicates(sample_list))  # Output: [1, 2, 3, 4, 5]
+print(remove_duplicates(sample_list))
